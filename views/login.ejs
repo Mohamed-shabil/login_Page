@@ -1,0 +1,28 @@
+<%- include('partials/_header') %>
+<body class="d-flex justify-content-center align-items-center w-100">
+    <form action="/" method="post" class="form-box p-5 rounded-4">
+        <div class="icon-box col-lg-12 d-flex align-items-center justify-content-center mt-1 mb-5">
+            <img src="/img/man.png" alt="" srcset="">
+        </div>
+        <div class="col-12 d-flex">
+            <%if(errMsg) { %>
+                <div class="font-regular alert alert-danger w-100 p-2 text-center" role="alert">
+                    Enter a valid username and password
+                </div>
+            <%}%>
+        </div>
+        <div class="col-lg-12 d-flex flex-column mb-3">
+            <label for="" class="label mb-1 font">Username</label>
+            <input type="text" class="form-control font" name="username" placeholder="Enter your username" autocomplete="off">
+        </div>
+        <div class="col-lg-12 d-flex flex-column mb-3">
+            <label for="" class="label mb-1 font">Password</label>
+            <input type="password" class="form-control font" name="password" placeholder="Enter your password">
+        </div>
+        <div class="col-lg-12">
+            <button type="submit" class="btn btn-primary font w-100">Login</button>
+        </div>
+    </form>
+    
+    
+<%- include('partials/_footer') %>

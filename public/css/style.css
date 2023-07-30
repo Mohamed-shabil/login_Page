@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+    height: 100vh!important;
+    font-family: 'Poppins', sans-serif;
+}
+.font{
+    font-family: 'Poppins', sans-serif;
+}
+.font-regular{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+input[type="text"],input[type="password"]{
+    font-size: 13px;
+    height: 40px;
+}
+.form-box{
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.form-box .icon-box img{
+    width: 60px;
+    height: 60px;
+}
